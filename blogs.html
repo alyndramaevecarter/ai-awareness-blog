@@ -2,75 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Awareness Blogs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body {
-            background-color: lightgray;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
+        }
+        .blog-hero {
+            background-color: #f5f7fa;
+            padding: 60px 20px;
         }
     </style>
 </head>
 
 <body>
 
-<!-- BOOTSTRAP NAVBAR START -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="index.html">AI Blog</a>
+    <a class="navbar-brand" href="index.html">AI Awareness</a>
 
-    <div class="collapse navbar-collapse show">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="blogs.html">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="register.html">Register</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blogs.html">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<!-- BOOTSTRAP NAVBAR END -->
 
-<div class="container mt-4">
-
-    <h1 class="text-center">AI Awareness Blogs</h1>
-
-    <hr>
-
-    <h3>What is Artificial Intelligence?</h3>
-    <p>
-        Artificial Intelligence is the ability of machines to think and learn like humans.
+<!-- HERO -->
+<section class="blog-hero text-center">
+  <div class="container">
+    <h1 class="fw-bold">AI Awareness Blogs</h1>
+    <p class="fs-5 mt-2">
+      Simple blogs to help you understand Artificial Intelligence
+      and its impact on the modern world.
     </p>
+  </div>
+</section>
 
-    <h3>Advantages of AI</h3>
-    <p>
-        AI helps in automation, accuracy, and saving time in many fields.
-    </p>
+<!-- BLOGS -->
+<div class="container mt-5 mb-5">
 
-    <h3>Disadvantages of AI</h3>
-    <p>
-        AI may reduce jobs and increase dependency on machines.
-    </p>
+  <div class="row">
+
+    <!-- BLOG 1 -->
+    <div class="col-md-6">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title">What is Artificial Intelligence?</h4>
+          <p class="card-text">
+            Artificial Intelligence (AI) refers to the ability of machines and computer
+            systems to perform tasks that normally require human intelligence.
+            These tasks include learning, reasoning, problem-solving, and decision-making.
+          </p>
+          <p class="card-text">
+            AI systems are used in everyday technologies such as voice assistants,
+            recommendation systems, and smart applications, making life easier
+            and more efficient.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOG 2 -->
+    <div class="col-md-6">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title">Advantages and Disadvantages of AI</h4>
+          <p class="card-text">
+            Artificial Intelligence offers many advantages such as automation,
+            increased accuracy, and the ability to work continuously without fatigue.
+            AI helps businesses and individuals save time and improve productivity.
+          </p>
+          <p class="card-text">
+            However, AI also has disadvantages. It may lead to job displacement,
+            high development costs, and over-dependence on machines.
+            Therefore, responsible and ethical use of AI is very important.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BLOG 3 (OPTIONAL EXTRA – GOOD FOR MARKS) -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title">AI in Education and Daily Life</h4>
+          <p class="card-text">
+            In education, AI provides personalized learning experiences,
+            smart tutoring systems, and automated grading tools.
+            Students can learn at their own pace with the help of AI-powered platforms.
+          </p>
+          <p class="card-text">
+            In daily life, AI is used in mobile phones, smart home devices,
+            online shopping recommendations, and navigation systems.
+            AI continues to shape the way people interact with technology.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
